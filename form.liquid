@@ -1,0 +1,22 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  <script>
+  $(document).ready(function() {
+     $("form[action='/cart']").validate({errorClass: "error fail-alert", validClass: "valid success-alert"});
+  });
+  </script>
+  <style>
+  span.gift-wrappingtext {
+    display: inline-block;
+    width: 100%;
+  }
+  .error.fail-alert {
+    border: 2px solid red;
+  }
+  .valid.success-alert {
+    border: 1px solid #e8e8e8;
+  }
+  label#CartSpecialInstructions-error, label#CartSpecialInstructions-success {
+    display: none !important;
+  }
+  </style>
